@@ -28,3 +28,14 @@ const myArray2 = [
 ];
 const thisData = myArray2[1][2];
 console.log(thisData);
+
+let footballer = [
+    ["Cristiano", 7],
+    ["Messi", 10]
+];
+
+const goatBall = footballer[0][0];
+console.log(goatBall);
+
+let goatBallSen = "The two best footballers are "+footballer[0][0]+" and "+footballer[1][0];
+console.log(goatBallSen);
