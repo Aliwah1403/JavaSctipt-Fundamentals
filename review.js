@@ -37,5 +37,64 @@ let footballer = [
 const goatBall = footballer[0][0];
 console.log(goatBall);
 
-let goatBallSen = "The two best footballers are "+footballer[0][0]+" and "+footballer[1][0];
+let goatBallSen = "The two best footballers are " + footballer[0][0] + " and " + footballer[1][0];
 console.log(goatBallSen);
+
+footballer.push(["Neymar", 11]);
+console.log(footballer);
+
+let removedBaller = " ";
+removedBaller = footballer.pop();
+console.log(removedBaller);
+
+let petArray = ["cat", "dog", "bird"];
+petArray.shift();
+console.log(petArray);
+
+
+function nameFunciton(){
+    let firstName = "Curtis";
+    let lastName = "Aliwah";
+    let fullName = firstName + " "+ lastName;
+    return fullName;
+}
+console.log(nameFunciton());
+
+function withArgs(num1, num2){
+    return num1 + num2;
+}
+console.log(withArgs(2,3));
+
+
+function yesEqual(myVal){
+    if(myVal == 10){
+        return "It is equal";
+    }
+    return "It is not equal";
+}
+console.log(yesEqual(10));
+console.log(yesEqual("10"));
+console.log(yesEqual(9));
+
+function strictEqual(myVal){
+    if(myVal === 12){
+        return "It is equal";
+    }
+    return "Not equal";
+}
+console.log(strictEqual(12));
+console.log(strictEqual("12"));
+
+
+function testIf(val){
+    if(val > 5){
+        return "This number is larger than 5";
+    }else if(val < 5){
+        return "This number is not larger than 5";
+    }else{
+        return "Number entered is 5";
+    }
+}
+console.log(testIf(4));
+console.log(testIf(6));
+console.log(testIf(5));
