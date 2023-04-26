@@ -52,22 +52,22 @@ petArray.shift();
 console.log(petArray);
 
 
-function nameFunciton(){
+function nameFunciton() {
     let firstName = "Curtis";
     let lastName = "Aliwah";
-    let fullName = firstName + " "+ lastName;
+    let fullName = firstName + " " + lastName;
     return fullName;
 }
 console.log(nameFunciton());
 
-function withArgs(num1, num2){
+function withArgs(num1, num2) {
     return num1 + num2;
 }
-console.log(withArgs(2,3));
+console.log(withArgs(2, 3));
 
 
-function yesEqual(myVal){
-    if(myVal == 10){
+function yesEqual(myVal) {
+    if (myVal == 10) {
         return "It is equal";
     }
     return "It is not equal";
@@ -76,8 +76,8 @@ console.log(yesEqual(10));
 console.log(yesEqual("10"));
 console.log(yesEqual(9));
 
-function strictEqual(myVal){
-    if(myVal === 12){
+function strictEqual(myVal) {
+    if (myVal === 12) {
         return "It is equal";
     }
     return "Not equal";
@@ -86,15 +86,75 @@ console.log(strictEqual(12));
 console.log(strictEqual("12"));
 
 
-function testIf(val){
-    if(val > 5){
+function testIf(val) {
+    if (val > 5) {
         return "This number is larger than 5";
-    }else if(val < 5){
+    } else if (val < 5) {
         return "This number is not larger than 5";
-    }else{
+    } else {
         return "Number entered is 5";
     }
 }
 console.log(testIf(4));
 console.log(testIf(6));
 console.log(testIf(5));
+
+
+function testSize(num) {
+    if (num < 5) {
+        return "Tiny";
+    } else if (num < 10) {
+        return "Small";
+    } else if (num < 15) {
+        return "Medium";
+    } else if (num < 20) {
+        return "Large";
+    } else {
+        return "Huge";
+    }
+}
+console.log(testSize(7));
+console.log(testSize(3));
+console.log(testSize(12));
+console.log(testSize(18));
+console.log(testSize(40));
+
+
+function caseInSwitch(val) {
+    let result = " ";
+    switch (val) {
+        case 1:
+            result = "alpha";
+            break;
+
+        case 2:
+            result = "beta";
+            break;
+
+        case 3:
+        case 4:
+        case 5:
+            result = "gamma";
+            break;
+
+        default:
+            result = "No match";
+            break;
+    }
+    return result;
+}
+console.log(caseInSwitch(1));
+console.log(caseInSwitch(2));
+console.log(caseInSwitch(3));
+console.log(caseInSwitch(4));
+console.log(caseInSwitch("s"));
+
+
+const dog = {
+    name: "TJ",
+    legs: 4,
+    color: "white and black"
+};
+
+const dogName = dog.name;
+console.log(dogName);
