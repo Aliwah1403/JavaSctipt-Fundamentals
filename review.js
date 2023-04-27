@@ -158,3 +158,66 @@ const dog = {
 
 const dogName = dog.name;
 console.log(dogName);
+
+const cats = {
+    Casper: "Turkish Angora",
+    Flavio: "American Shorthair",
+    Milo: "American Shorthair"
+};
+const myCat = "Casper";
+const myBreed = cats[myCat];
+console.log(myBreed);
+
+cats.Luna = "American Shorthair";
+console.log(cats);
+
+delete cats.Luna;
+console.log(cats);
+
+console.log(cats.hasOwnProperty("Flavio"));
+
+const myStorage = {
+    car: {
+        inside: {
+            "glove box": "maps"
+        }
+    }
+};
+const gloveBoxContents = myStorage.car.inside["glove box"];
+console.log(gloveBoxContents);
+myStorage.car.inside["driver seat"] = "steering";
+console.log(myStorage.car.inside);
+
+
+const thisPlants = [
+    {
+        type: "flowers",
+        list: [
+            "roses",
+            "tulips",
+            "violets"
+        ]
+    },
+
+    {
+        type: "trees",
+        list: [
+            "fir",
+            "oak",
+            "mahogany"
+        ]
+    }
+];
+const onePlant = thisPlants[0].list[1];
+console.log(onePlant);
+const oneTree = thisPlants[1].list[2];
+console.log(oneTree);
+
+
+const whileLoop = [];
+let a = 0;
+while (a < 5) {
+    whileLoop.push(a);
+    a++;
+}
+console.log(whileLoop);
