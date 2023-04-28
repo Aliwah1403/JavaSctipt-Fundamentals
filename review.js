@@ -221,3 +221,104 @@ while (a < 5) {
     a++;
 }
 console.log(whileLoop);
+
+const noCount = [];
+let b = 5;
+while (b >= 0) {
+    noCount.push(b);
+    b--;
+}
+console.log(noCount);
+
+const evenNo = [];
+let c = 0;
+while (c < 10) {
+    evenNo.push(c);
+    c += 2;
+}
+console.log(evenNo);
+
+const oddNo = [];
+let d = 1;
+while (d < 10) {
+    oddNo.push(d);
+    d += 2;
+}
+console.log(oddNo);
+
+
+const forLoop = [];
+for (let e = 0; e < 5; e++) {
+    forLoop.push(e);
+}
+console.log(forLoop);
+
+const arr = [1, 2, 3, 4, 5, 6, 7];
+for (let f = 0; f < arr.length; f++) {
+    console.log(arr[f]);
+}
+
+const twoArray = [
+    [1, 2], [3, 4], [5, 6]
+];
+for (let g = 0; g < twoArray.length; g++) {
+    for (let h = 0; h < twoArray[g].length; h++) {
+        console.log(twoArray[g][h]);
+    }
+}
+
+const doLoop = [];
+let i = 3;
+do {
+    doLoop.push(i);
+    i++;
+} while (i <= 10);
+console.log(doLoop);
+
+
+function randomFraction() {
+    return Math.random();
+}
+console.log(randomFraction());
+
+function wholeNumber() {
+    return Math.floor(Math.random() * 21);
+}
+console.log(wholeNumber());
+
+
+function randomRange(max, min) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+console.log(randomRange(10, 1));
+console.log(randomRange(100, 5));
+
+
+// try make a functionb that returns a 4 digit OTP
+
+
+const testInt = parseInt("007");
+console.log(testInt);
+
+function convertToInteger(str) {
+    return parseInt(str);
+}
+console.log(convertToInteger("56"));
+console.log(convertToInteger("JAMES"));
+
+const testInt2 = parseInt("10021", 16);
+console.log(testInt2);
+
+function getTheGreatest(a, b) {
+    return a > b ? "a is greater" : "b is greater";
+}
+console.log(getTheGreatest(13, 34));
+
+function checkNumber(val){
+    return (val > 0) ? "Positive"
+    : (val < 0) ? "Negative"
+    :"Zero"
+}
+console.log(checkNumber(1));
+console.log(checkNumber(-2));
+console.log(checkNumber(0));
